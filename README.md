@@ -23,11 +23,11 @@ Below is a higher-level overview of the mosaicing technique implemented:
 
 # Stitched Mosaics
 The algorithm was tested on two datasets: agricultural farm and of Chandigarh city (the dataset has been personally collected). Below shows some of the mosaics:
-## Farm Mosaics
+## Farm Mosaic
+![Farm Mosaic](https://github.com/adityajain07/Drone-Images-Mosaicing/blob/master/Farm%20Mosaics/Mosaic_15Images.jpg)
 
-
-## City Mosaics
-
+## City Mosaic
+![City Mosaic](https://github.com/adityajain07/Drone-Images-Mosaicing/blob/master/City%20Mosaics/FinalMosaic_40Images.jpg)
 
 # Future Work
 As it is evident that the quality of mosaic is deteriorating with increase in the number of stitched images. That is because the homography error accumulates with each stitch. Need to implement Bundle Adjustment to reduce the propagating error.
