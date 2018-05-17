@@ -22,9 +22,9 @@ Below is a higher-level overview of the mosaicing technique implemented:
 
 
 # Stitched Mosaics
-The algorithm was tested on two datasets: agricultural farm and of Chandigarh city (the dataset has been personally collected). Below shows some of the mosaics:
+The algorithm was tested on two datasets: agricultural farm and of Chandigarh city (the dataset has been personally collected). Below shows some of the mosaics (the mosaics below have been resized for easy viewing. Please see the original mosaics in their respective folders):
 ## Farm Mosaic
-![Farm Mosaic](https://github.com/adityajain07/Drone-Images-Mosaicing/blob/master/Farm%20Mosaics/Mosaic_15Images.jpg)
+![Farm Mosaic](https://github.com/adityajain07/Drone-Images-Mosaicing/blob/master/Display_FarmM.jpg)
 
 ## City Mosaic
 ![City Mosaic](https://github.com/adityajain07/Drone-Images-Mosaicing/blob/master/Display_CityM.jpg)
