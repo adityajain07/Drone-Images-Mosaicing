@@ -27,7 +27,7 @@ The algorithm was tested on two datasets: agricultural farm and of Chandigarh ci
 ![Farm Mosaic](https://github.com/adityajain07/Drone-Images-Mosaicing/blob/master/Farm%20Mosaics/Mosaic_15Images.jpg)
 
 ## City Mosaic
-![City Mosaic](https://github.com/adityajain07/Drone-Images-Mosaicing/blob/master/Webp.net-resizeimage.jpg)
+![City Mosaic](https://github.com/adityajain07/Drone-Images-Mosaicing/blob/master/Display_CityMosaic.jpg)
 
 # Future Work
 As it is evident that the quality of mosaic is deteriorating with increase in the number of stitched images. That is because the homography error accumulates with each stitch. Need to implement Bundle Adjustment to reduce the propagating error.
