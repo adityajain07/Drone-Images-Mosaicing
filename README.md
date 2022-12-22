@@ -1,17 +1,31 @@
-# About
+# Image Stitching for Drone mapping
+This project contains code for stitching large number of images using classical computer vision techniques for application in drone mapping.
 
-In recent times, Unmanned Aerial Vehicles (UAVs), more commonly known as drones, have been finding applications in a range of fields. They are used to capture aerial imagery in sectors like precision agriculture, infrastructure, disaster management, city planning etc. The first crucial step after collecting aerial imagery is to generate a mosaic (or orthomosaic) from the imagery dataset or in a layman’s language a digital map. <br/>
+## Setup python environment
+Install [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) and prepare a python environment using the following steps:
 
-This project contains the code written from scratch to generate mosaics out of drone imagery. This code can also be used for panorama generation.  <br/>
+Build a new conda environment
+```bash
+conda create -n image_stitching python=3.8
+```
 
-A single-clicked image has a limited field of view (FOV), we need to stitch together several image stills to form a mosaic to increase the FOV. Image mosaicing is a very popular way to obtain a wide FOV image of a scene. The basic idea is to capture images as a camera moves and stitch these images together to obtain a single larger image. The moving camera on the drone can be used to capture more slices of an area. These multiple image slices can be mosaiced together to give an entire view of a scene.
+Install additional libraries using pip:
 
-# Approach
-## Assumptions
+```bash
+python3 -m pip install -r requirements.txt
+```
+
+Activate the conda environment:
+```bash
+conda activate image_stitching
+```
+
+## Approach
+### Assumptions
 * There is atleast 70% overlap (both front and sideways) between the images while the data was collected
 * The images are stored sequentially in the dataset
 
-## Methodology
+### Methodology
 Below is a higher-level overview of the mosaicing technique implemented:
 
 1. Choose first two images in the dataset
@@ -21,7 +35,7 @@ Below is a higher-level overview of the mosaicing technique implemented:
 1. Repeat step 2 with the current mosaic and the next image, until all the images in the dataset are covered
 
 
-# Stitched Mosaics
+### Stitched Mosaics
 The algorithm was tested on two datasets: agricultural farm and of Chandigarh city (the dataset has been personally collected). Below shows some of the mosaics (the mosaics below have been resized for easy viewing. Please see the original mosaics in their respective folders):
 ## Farm Mosaic
 ![Farm Mosaic](https://github.com/adityajain07/Drone-Images-Mosaicing/blob/master/Display_FarmM.jpg)
